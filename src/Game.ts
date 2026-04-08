@@ -131,11 +131,6 @@ export function setupGame(update: (state: any) => void) {
     layout()
 
     function evaluate() {
-        // demo win rate
-        if (Math.random() > 0.6) {
-            update({ balance, win: 0 })
-            return
-        }
 
         let win = 0
         const winPositions: { r: number; row: number }[] = []
